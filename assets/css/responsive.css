@@ -1,0 +1,70 @@
+/****** Large screen media queries ******/
+
+@media screen and (max-width: 992px) {
+  /* partners section */
+  .partners-logo-wrapper span{
+  border: 1px solid var(--primary-color-200);
+  }
+  /* contact section */
+  .contact-section .contact-info{
+  border-right: 0;
+  border-bottom: 1px solid var(--primary-color-200);
+}
+}
+
+/****** Medium screen media queries ******/
+
+@media screen and (max-width: 768px) {
+  /* hero section */
+ .hero-section, 
+ .featured-section,
+ .about-section,
+ .services-section,
+ .pricing-section,
+ .reviews-section,
+ .team-section,
+ .partners-section,
+ .contact-section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+  /* Reviews section */
+ .reviews-section .slide p {
+    padding: 0 20px;
+  }
+ .reviews-section .nav-btn {
+    display: none;
+  }
+}
+
+/****** Small screen media queries ******/
+
+@media screen and (max-width: 576px) {
+  /* default fonts */
+  .heading-text{
+    font-size: var(--primary-heading-200);
+  }
+  .title-text{
+    font-size: var(--primary-heading-300);
+  }
+  .paragraph-text{
+    letter-spacing: 0;
+  }
+  /* partners section */
+  .partners-logo-wrapper span img{
+  width: 100px;
+  }
+}
+
+/****** Extra small screen media queries ******/
+
+@media screen and (max-width: 400px) {
+  /* default fonts */
+  .heading-text{
+    font-size: var(--primary-heading-300);
+  }
+  /* partners section */
+  .partners-logo-wrapper span img{
+  width: 100px;
+  }
+}

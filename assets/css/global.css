@@ -1,0 +1,257 @@
+/* ************************************************************
+:: Template Name: CyberX - Cyber Security Landing Page Template
+:: Template URI: 
+:: Template Author Name: Omar bin Asad
+:: Template Author URI: https://omarbinasad.netlify.app/
+:: Version: 1.0.0
+:: Created: 2023
+************************************************************  */
+
+/* Font link */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@300;500;800&family=Poppins:wght@300;500;600&display=swap");
+
+/* Default Styles */
+:root {
+  --primary-color-100: #43cad4;
+  --primary-color-200: #00637c;
+  --color-light-100: #ffffff;
+  --color-light-200: #c9c9c9;
+  --color-dark-100: #707070;
+  --color-dark-200: #000000;
+  --gradient-color: #;
+  --primary-heading-100: 60px;
+  --primary-heading-200: 40px;
+  --primary-heading-300: 25px;
+  --primary-paragraph-100: 20px;
+  --primary-paragraph-200: 16px;
+  --primary-paragraph-300: 14px;
+  --primary-font: "Orbitron", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+}
+
+*,
+html,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior:2;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-dark-200);
+  border: 1px solid var(--primary-color-200);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color-200);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color-100);
+}
+
+/* Texts  */
+.heading-text {
+  font-family: var(--primary-font);
+  letter-spacing: 3px;
+  font-size: var(--primary-heading-100);
+  font-weight: 500;
+  color: var(--color-light-100);
+}
+.title-text {
+  font-family: var(--primary-font);
+  letter-spacing: 3px;
+  font-size: var(--primary-heading-200);
+  font-weight: 500;
+  color: var(--color-light-100);
+}
+.sub-title-text {
+  font-family: var(--primary-font);
+  letter-spacing: 2px;
+  font-size: var(--primary-paragraph-200);
+  font-weight: 500;
+  color: var(--color-light-100);
+}
+.paragraph-text {
+  font-family: var(--secondary-font);
+  font-size: var(--primary-paragraph-200);
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--color-light-200);
+  text-align: justify;
+}
+.paragraph-text-sm {
+  font-family: var(--secondary-font);
+  font-size: var(--primary-paragraph-300);
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--color-light-200);
+  text-align: justify;
+}
+
+/* All buttons default styles */
+/* primary large buttons  */
+.button-primary-lg {
+  background: transparent;
+  border: 1px solid var(--primary-color-200);
+  color: var(--color-light-100);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px var(--color-dark-200);
+}
+.button-primary-lg:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color-100),
+    var(--primary-color-200)
+  );
+  transition: all 0.3s ease;
+}
+.button-primary-lg:hover {
+  color: var(--primary-color-100);
+}
+.button-primary-lg:hover:after {
+  width: 0;
+}
+/* primary small buttons  */
+.button-primary-sm {
+  background: transparent;
+  border: 1px solid var(--primary-color-200);
+  color: var(--color-light-100);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  padding: 4px 16px;
+  font-size: 16px;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px var(--color-dark-200);
+}
+.button-primary-sm:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color-100),
+    var(--primary-color-200)
+  );
+  transition: all 0.3s ease;
+}
+.button-primary-sm:hover {
+  color: var(--primary-color-100);
+}
+.button-primary-sm:hover:after {
+  width: 0;
+}
+/* Secondary large buttons*/
+.button-secondary-lg {
+  background: transparent;
+  border: 1px solid var(--primary-color-200);
+  color: var(--primary-color-100);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px var(--color-dark-200);
+}
+.button-secondary-lg:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color-100),
+    var(--primary-color-200)
+  );
+  transition: all 0.3s ease;
+}
+.button-secondary-lg:hover {
+  color: #fff;
+}
+.button-secondary-lg:hover:after {
+  width: 100%;
+}
+
+/* Secondary small buttons  */
+.button-secondary-sm {
+  background: transparent;
+  border: 1px solid var(--primary-color-200);
+  color: var(--primary-color-100);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  padding: 4px 16px;
+  font-size: 16px;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px var(--color-dark-200);
+}
+.button-secondary-sm:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color-100),
+    var(--primary-color-200)
+  );
+  transition: all 0.3s ease;
+}
+.button-secondary-sm:hover {
+  color: #fff;
+}
+.button-secondary-sm:hover:after {
+  width: 100%;
+  /* -webkit-transform: scale(1);
+  transform: scale(1); */
+}
+
+body {
+  /* background-image: url(/assets/images/wave-shape.svg); */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  background-color: var(--color-dark-200);
+  /* scroll-behavior: smooth; */
+  /* cursor: none; */
+}
