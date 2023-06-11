@@ -63,6 +63,11 @@
   .heading-text{
     font-size: var(--primary-heading-300);
   }
+  /* featured-section */
+  .featured-section .featured-card .featured-card-inner i{
+    font-size: 55px;
+  }
+  
   /* partners section */
   .partners-logo-wrapper span img{
   width: 100px;

@@ -42,18 +42,19 @@ html{
   scroll-behavior:2;
 }
 
-/* width */
+/* Scrollbar width */
 ::-webkit-scrollbar {
   width: 15px;
 }
 
-/* Track */
+/* Scrollbar Track */
 ::-webkit-scrollbar-track {
   background: var(--color-dark-200);
   border: 1px solid var(--primary-color-200);
+  
 }
 
-/* Handle */
+/* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color-200);
 }

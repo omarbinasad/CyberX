@@ -128,26 +128,26 @@
 
   <!-- Featured section start-->
   <section class="container featured-section">
-    <div class="row mt-4 gy-5">
-      <div class="col-md-4 featured-card">
-        <div class="featured-card-inner d-flex flex-column text-center gap-3">
+    <div class="row mt-4 gy-5 justify-content-center">
+      <div class="col-lg-4 col-md-6 featured-card ">
+        <div class="featured-card-inner d-flex flex-column text-center gap-3 px-3 pb-4">
           <i class="fa-solid fa-shield-halved"></i>
-          <p>Cyber Threat Intelligence</p>
+          <p class="sub-title-text">Cyber Threat Intelligence</p>
         </div>
       </div>
-      <div class="col-md-4  featured-card">
-        <div class="featured-card-inner d-flex flex-column text-center gap-3">
+      <div class="col-lg-4 col-md-6  featured-card">
+        <div class="featured-card-inner d-flex flex-column text-center gap-3 px-3 pb-4">
           <i class="fa-solid fa-fingerprint"></i>
-          <p>Software Security Scanning</p>
+          <p class="sub-title-text">Software Security Scanning</p>
         </div>
       </div>
-      <div class="col-md-4  featured-card">
-        <div class="featured-card-inner d-flex flex-column text-center gap-3">
+      <div class="col-lg-4 col-md-6  featured-card">
+        <div class="featured-card-inner d-flex flex-column text-center gap-3 px-3 pb-4">
           <i class="fa-solid fa-brain"></i>
-          <p>Artifitial Intelligence</p>
+          <p class="sub-title-text">Artifitial Intelligence</p>
         </div>
       </div>
-
+    </div>
   </section>
   <!-- Featured section end-->
 
@@ -550,7 +550,6 @@
         </div>
       </div>
     </div>
-
   </section>
   <!-- Team section end-->
 
@@ -584,7 +583,6 @@
   <!-- Partners section end-->
 
   <!-- Contact section start-->
-
   <section id="contact" class="container contact-section">
     <h1 class="title-text text-center d-lg-none ">Let's get in Touch</h1>
     <p class="paragraph-text text-center d-lg-none pt-4 pb-5">
@@ -610,7 +608,6 @@
             <a href=""><i class="fa-solid fa-location-dot"></i></a>
             <p class="icon-text">Road No, City Name/Code, Country Name.</p>
           </span>
-
         </div>
         <div class="social-icons d-flex gap-4 py-2 justify-content-center justify-content-md-start">
           <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
@@ -656,18 +653,76 @@
     <iframe class="map"
       src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d829347.617676299!2d-110.692332!3d35.710497!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1686451346019!5m2!1sen!2sbd"
       style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
   </section>
   <!-- Map Section end -->
 
   <!-- Footer start-->
-  <footer class="container custom-footer">
-    <div class="row">
-      <div class="col-md-4">
-        
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row footer-top g-3">
+        <div class="col-md-5">
+          <!-- logo -->
+          <a class="navbar-brand" href="#">
+            <img class="main_logo" src="assets/images/logo/logo2.png" alt="logo" />
+          </a>
+          <!-- info -->
+          <div class="social-icons icons-wrapper d-flex flex-column gap-3 pt-4">
+            <span class="d-flex flex-column flex-md-row align-items-center gap-3 text-center">
+              <a href=""><i class="fa-solid fa-phone"></i></a>
+              <p class="paragraph-text-sm">+012 345 6789</p>
+            </span>
+            <span class="d-flex flex-column flex-md-row align-items-center gap-3 text-center">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <p class=" paragraph-text-sm">admin@gmail.com</p>
+            </span>
+            <span class="d-flex flex-column flex-md-row align-items-center gap-3 text-center">
+              <a href=""><i class="fa-solid fa-location-dot"></i></a>
+              <p class="paragraph-text-sm">Road No, City Name/Code, Country Name.</p>
+            </span>
+
+          </div>
+        </div>
+        <div class="col-md-3">
+          <ul class="mb-lg-0 list-unstyled d-flex flex-column gap-3">
+            <li class="">
+              <a class="text-decoration-none paragraph-text-sm" href="#home">Home</a>
+            </li>
+            <li class="">
+              <a class="text-decoration-none paragraph-text-sm" href="#about">About</a>
+            </li>
+            <li class="">
+              <a class="text-decoration-none paragraph-text-sm" href="#services">Services</a>
+            </li>
+            <li class="">
+              <a class="text-decoration-none paragraph-text-sm" href="#faq">FAQs</a>
+            </li>
+            <li class="">
+              <a class="text-decoration-none paragraph-text-sm" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <form class="row newsletter-form mx-auto">
+            <div class="col-lg-8 p-0">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="col-lg-4 p-0">
+              <button type="submit " class="button-primary-sm w-100 h-100">Subscribe
+              </button>
+            </div>
+          </form>
+          <!-- social icons -->
+          <div class="social-icons d-flex gap-3 pt-4">
+            <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="text-center paragraph-text-sm">Copyright © 2023 CyberX | Designed by Omar bin Asad</p>
     </div>
   </footer>
   <!-- Footer end-->
