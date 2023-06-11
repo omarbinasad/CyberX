@@ -7,38 +7,6 @@
 :: Created: 2023
 ************************************************************  */
 
-/* Custom Cursor css */
-.inner-cursor {
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  mix-blend-mode: difference;
-  border-radius: 50%;
-  pointer-events: none;
-  transition: width 0.5s, height 0.5s, 0.07s;
-}
-.grow-cursor {
-  width: 80px;
-  height: 80px;
-  transition: width 0.5s, height 0.5s;
-  mix-blend-mode: difference;
-  z-index: 100;
-}
-.inner-cursor::before {
-  content: "";
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 130%;
-  height: 130%;
-  transform: translate(-50%, -50%);
-  border: 1px solid white;
-  mix-blend-mode: difference;
-  border-radius: 50%;
-}
-
 /* Navbar css start*/
 .custom-navbar {
   background: rgba(255, 255, 255, 0);

@@ -1,30 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Preloader
+  let loaderInner = document.querySelector('.preloader-inner');
+  let loader = document.querySelector('.preloader');
+  window.onload = function () {
+    setTimeout(function () {
+      loader.style.display = 'none';
+      loaderInner.style.width = '0%';
+    },2000)
+  };
+
   // CUSTOM CURSOR JS
   let innerCursor = document.querySelector(".inner-cursor");
-  // let outerCursor = document.querySelector(".outer-cursor");
+  let outerCursor = document.querySelector(".outer-cursor");
 
-  // document.addEventListener("mousemove", moveCursor);
+  document.addEventListener("mousemove", moveCursor);
 
-  // function moveCursor(e) {
-  //   let x = e.clientX;
-  //   let y = e.clientY;
+  function moveCursor(e) {
+    let x = e.clientX;
+    let y = e.clientY;
 
-  //   innerCursor.style.left = `${x}px`;
-  //   innerCursor.style.top = `${y}px`;
-  //   outerCursor.style.left = `${x}px`;
-  //   outerCursor.style.top = `${y}px`;
-  // }
+    innerCursor.style.left = `${x}px`;
+    innerCursor.style.top = `${y}px`;
+    outerCursor.style.left = `${x}px`;
+    outerCursor.style.top = `${y}px`;
+  }
 
-  // let growItems = Array.from(document.querySelectorAll("a, h1, p, button"));
+  let growItems = Array.from(document.querySelectorAll("a, h1, p, button"));
 
-  // growItems.forEach((link) => {
-  //   link.addEventListener("mouseover", () => {
-  //     innerCursor.classList.add("grow-cursor");
-  //   });
-  //   link.addEventListener("mouseleave", () => {
-  //     innerCursor.classList.remove("grow-cursor");
-  //   });
-  // });
+  growItems.forEach((link) => {
+    link.addEventListener("mouseover", () => {
+      innerCursor.classList.add("grow-cursor");
+    });
+    link.addEventListener("mouseleave", () => {
+      innerCursor.classList.remove("grow-cursor");
+    });
+  });
 
   // navbar menu active link js
   // const activeLink = window.location.pathname;
