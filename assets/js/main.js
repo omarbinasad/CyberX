@@ -1,49 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Preloader
   let loaderInner = document.querySelector('.preloader-inner');
+  let loadingText = document.querySelector('.loading-text');
   let loader = document.querySelector('.preloader');
+  let html = document.querySelector('html');
   window.onload = function () {
     setTimeout(function () {
-      loader.style.display = 'none';
+      loader.style.opacity = '0';
+      loadingText.style.opacity = '0';
+      // loader.style.display = 'none';
       loaderInner.style.width = '0%';
-    },2000)
+      html.style.overflow="auto";
+    },500)
   };
 
-  // CUSTOM CURSOR JS
-  let innerCursor = document.querySelector(".inner-cursor");
-  let outerCursor = document.querySelector(".outer-cursor");
-
-  document.addEventListener("mousemove", moveCursor);
-
-  function moveCursor(e) {
-    let x = e.clientX;
-    let y = e.clientY;
-
-    innerCursor.style.left = `${x}px`;
-    innerCursor.style.top = `${y}px`;
-    outerCursor.style.left = `${x}px`;
-    outerCursor.style.top = `${y}px`;
-  }
-
-  let growItems = Array.from(document.querySelectorAll("a, h1, p, button"));
-
-  growItems.forEach((link) => {
-    link.addEventListener("mouseover", () => {
-      innerCursor.classList.add("grow-cursor");
-    });
-    link.addEventListener("mouseleave", () => {
-      innerCursor.classList.remove("grow-cursor");
-    });
-  });
-
-  // navbar menu active link js
-  // const activeLink = window.location.pathname;
-  // const navLinks = document.querySelectorAll(".custom-navbar .navbar-nav li a");
-  // navLinks.forEach((link) => {
-  //   if (link.href.includes(`${activeLink}`)) {
-  //     link.classList.add("activeLink");
-  //   }
-  // });
 
   // Pricing table toggle funtion
     let checkBox = document.getElementById("checkbox");
@@ -80,6 +50,35 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // contact form
+  const contactForm = document.getElementById("contact-form")
+  const firstName = document.getElementById("inputFirstName")
+  const lastName = document.getElementById("inputLastName")
+  const email = document.getElementById("inputEmail")
+  const phone = document.getElementById("inputPhoneNumber")
+  const subject = document.getElementById("inputSubject")
+  const message = document.getElementById("inputMessage")
+  const toastTrigger = document.getElementById('liveToastBtn')
+  const toastLiveExample = document.getElementById('liveToast')
+  const toast = new bootstrap.Toast(toastLiveExample)
+  contactForm.addEventListener("submit" , (e)=>{
+    e.preventDefault();
+    if (firstName.value == "" || email.value == "" || phone.value == "" || message.value == "") {
+      
+   toast.show();
+  } else {
+    // success toast notification
+      toast.show()
+    // alert("This form has been successfully submitted!");
+    console.log(
+      `First Name : ${firstName.value} Phone Number : ${phone.value}`
+    );
+  }
+});
+  
+
+  
+
   // scroll to top
   const toTop = document.querySelector(".scroll-to-top");
   window.addEventListener("scroll", () => {
@@ -89,5 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       toTop.classList.remove("active");
     }
 })
+// Aos
+ AOS.init();
 
 });

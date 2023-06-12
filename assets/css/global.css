@@ -13,7 +13,7 @@
 /* Default Styles */
 :root {
   --primary-color-100: #43cad4;
-  --primary-color-200: #00637c;
+  --primary-color-200: #006d7c;
   --color-light-100: #ffffff;
   --color-light-200: #c9c9c9;
   --color-dark-100: #707070;
@@ -40,7 +40,9 @@ p {
 }
 html{
   scroll-behavior:smooth;
+  overflow: hidden;
 }
+
 
 /* Scrollbar width */
 ::-webkit-scrollbar {
@@ -63,30 +65,74 @@ html{
 }
 
 /* Preloader css start */
-.preloader-section{
-
-
-}
-.preloader-section .preloader{
-  font-size: 35px;
-  color: var(--primary-color-100);
-  position: fixed;
-  top: 45%;
-  left: 50%;
-  z-index: 2100;
-  transform: translate(-50%, -50%);
-}
-.preloader-inner  {
+.preloader-section .preloader-inner  {
   position: fixed;
   background-color: var(--color-dark-200);
   width: 100%;
   height: 100vh;
-  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	right: 0;
   border-left: 1px solid rgba(0, 247, 255, 0.178);
   box-shadow: 0 4px 30px rgba(1, 202, 209, 0.158);
   z-index: 2000;
-  overflow: hidden;
-  transition: 1.5s;
+  overflow:hidden !important ;
+  transition: 1s ease-in-out all;
+}
+.preloader{
+  width:70px;
+  height:70px;
+  background:var(--primary-color-100);
+  text-align:center;
+  border-radius:50%;
+  position:absolute;
+  left:50%;
+  top:45%;
+  transform:translate(-50%,-50%);
+  transition: 0.5s;
+  opacity: 1;
+}
+.preloader:before{
+  position:absolute;
+  content:'';
+  border:5px solid var(--primary-color-200);
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  border-radius:50%;
+  animation:animate 1s linear infinite;
+}
+.preloader:after{
+  position:absolute;
+  content:'';
+  border:5px solid var(--primary-color-200);
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  border-radius:50%;
+  animation:animate 2s 1s linear infinite;
+}
+
+@keyframes animate{
+  100%{
+    transform:scale(3);
+    box-shadow: 4px 4px 30px var(--primary-color-100),-4px -4px 30px var(--primary-color-100);
+    opacity:0
+  }
+}
+.preloader-inner p{
+  -webkit-text-fill-color: black; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary-color-100);
+  font-size:40px;
+  text-transform: uppercase;
+  letter-spacing: 50px;
+  opacity: 0.5;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
 /* Preloader css end */

@@ -76,7 +76,7 @@
   padding-bottom: 150px;
 }
 
-/* scroller css */
+/* scroll down css */
 .scroller {
   position: absolute;
 }
@@ -86,7 +86,6 @@
   transform-origin: 0;
   color: var(--color-light-200);
 }
-
 .scroll-arrow {
   color: var(--color-light-200);
   margin-top: 200px;
@@ -202,12 +201,11 @@
   cursor: pointer;
 }
 .pricing-section .form-check-input:checked {
-    background-color: var(--primary-color-100);
-    border-color: none;
-    box-shadow: none;
+  background-color: var(--primary-color-100);
+  /* border-color:inherit; */
+  box-shadow: none;
 }
 .pricing-section .form-check-input:focus {
-    border-color: none;
     box-shadow: none;
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
 }
@@ -422,7 +420,7 @@
 /* Contact Section css start */
 .contact-section{
   padding-top: 150px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 .contact-section .contact-info{
   border-right: 1px solid var(--primary-color-200);
@@ -450,19 +448,16 @@
   box-shadow: none;
   background-color: rgba(0, 171, 194, 0.151);
 }
-/* Contact Section css end */
-
-/* Map section css start */
-.map-section{
-  padding-bottom: 150px;
-}
-.map-section .map {
+.contact-section .map {
   width: 100%;
   height: 400px; 
+  margin-top: 50px;
   border-radius: 10px;
   filter:invert(10);
  }
-/* Map section css end */
+/* Contact Section css end */
+
+
 
 /* Footer css start */
 .custom-footer{
