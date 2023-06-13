@@ -8,7 +8,7 @@
 ************************************************************  */
 
 /* Preloader css start */
-.preloader-section .preloader-inner  {
+.preloader-section .preloader-inner {
   position: fixed;
   background-color: var(--color-dark-200);
   width: 100%;
@@ -16,60 +16,61 @@
   display: flex;
   justify-content: center;
   align-items: center;
-	right: 0;
+  right: 0;
   border-left: 1px solid rgba(0, 247, 255, 0.178);
   box-shadow: 0 4px 30px rgba(1, 202, 209, 0.158);
   z-index: 2000;
-  overflow:hidden !important ;
+  overflow: hidden !important ;
   transition: 1s ease-in-out all;
 }
-.preloader{
-  width:70px;
-  height:70px;
-  background:var(--primary-color-100);
-  text-align:center;
-  border-radius:50%;
-  position:absolute;
-  left:50%;
-  top:45%;
-  transform:translate(-50%,-50%);
+.preloader {
+  width: 70px;
+  height: 70px;
+  background: var(--primary-color-100);
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
   transition: 0.5s;
   opacity: 1;
 }
-.preloader:before{
-  position:absolute;
-  content:'';
-  border:5px solid var(--primary-color-200);
-  left:0;
-  right:0;
-  bottom:0;
-  top:0;
-  border-radius:50%;
-  animation:animate 1s linear infinite;
+.preloader:before {
+  position: absolute;
+  content: "";
+  border: 5px solid var(--primary-color-200);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
 }
-.preloader:after{
-  position:absolute;
-  content:'';
-  border:5px solid var(--primary-color-200);
-  left:0;
-  right:0;
-  bottom:0;
-  top:0;
-  border-radius:50%;
-  animation:animate 2s 1s linear infinite;
+.preloader:after {
+  position: absolute;
+  content: "";
+  border: 5px solid var(--primary-color-200);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 50%;
+  animation: animate 2s 1s linear infinite;
 }
-@keyframes animate{
-  100%{
-    transform:scale(3);
-    box-shadow: 4px 4px 30px var(--primary-color-100),-4px -4px 30px var(--primary-color-100);
-    opacity:0
+@keyframes animate {
+  100% {
+    transform: scale(3);
+    box-shadow: 4px 4px 30px var(--primary-color-100),
+      -4px -4px 30px var(--primary-color-100);
+    opacity: 0;
   }
 }
-.preloader-inner p{
-  -webkit-text-fill-color: black; 
+.preloader-inner p {
+  -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--primary-color-100);
-  font-size:40px;
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 50px;
   opacity: 0.5;
@@ -112,7 +113,7 @@
 .custom-navbar .navbar-nav li a:hover::after {
   width: 100%;
 }
-.custom-navbar .navbar-nav li a.active{
+.custom-navbar .navbar-nav li a.active {
   color: var(--primary-color-100);
 }
 .custom-navbar .navbar-nav li a.active::after {
@@ -276,8 +277,8 @@
   box-shadow: none;
 }
 .pricing-section .form-check-input:focus {
-    box-shadow: none;
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
 }
 .pricing-section {
   padding-top: 150px;
@@ -299,15 +300,13 @@
   font-size: var(--primary-heading-100);
   border-top: 1px solid rgba(0, 142, 161, 0.575);
   border-bottom: 1px solid rgba(0, 142, 161, 0.575);
-  
 }
 .pricing-section .card .card-title sub {
   color: var(--color-light-100);
   font-family: var(--secondary-font);
   font-size: var(--primary-paragraph-300);
-  
 }
-.pricing-section .card .month-price{
+.pricing-section .card .month-price {
   display: none;
 }
 .pricing-section .card-container:nth-child(2) .card .card-title {
@@ -333,7 +332,7 @@
 /* Pricing section css end */
 
 /* Reviews Section css start */
-.reviews-section{
+.reviews-section {
   padding-top: 150px;
   padding-bottom: 150px;
 }
@@ -386,7 +385,7 @@
   font-weight: 400;
   color: var(--primary-color-200);
 }
- /* slider button css */
+/* slider button css */
 .reviews-section .nav-btn {
   height: 40px;
   width: 40px;
@@ -397,7 +396,7 @@
   transition: 0.5s;
 }
 .reviews-section .nav-btn:hover {
-  background-color:var(--primary-color-200);
+  background-color: var(--primary-color-200);
 }
 .reviews-section .nav-btn::after,
 .reviews-section .nav-btn::before {
@@ -411,10 +410,9 @@
 .reviews-section .swiper-pagination-bullet-active {
   background-color: var(--primary-color-100);
   position: relative;
- 
 }
-.reviews-section .swiper-pagination-bullet-active::before{
-  content: '';
+.reviews-section .swiper-pagination-bullet-active::before {
+  content: "";
   width: 14px;
   height: 14px;
   border: 1px solid var(--primary-color-100);
@@ -428,7 +426,7 @@
 /* Reviews Section css end */
 
 /* Team Section css start */
-.team-section{
+.team-section {
   padding-top: 150px;
   padding-bottom: 150px;
 }
@@ -460,49 +458,48 @@
 /* Team Section css end */
 
 /* Partners Section css start */
-.partners-section{
+.partners-section {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-.partners-logo-wrapper span{
+.partners-logo-wrapper span {
   /* border:1px solid var(--primary-color-200) !important; */
 }
 .partners-logo-wrapper span:nth-child(1),
 .partners-logo-wrapper span:nth-child(2),
 .partners-logo-wrapper span:nth-child(4),
 .partners-logo-wrapper span:nth-child(5),
-.partners-logo-wrapper span:nth-child(6){
+.partners-logo-wrapper span:nth-child(6) {
   border-right: 1px solid var(--primary-color-200);
   border-bottom: 1px solid var(--primary-color-200);
 }
 .partners-logo-wrapper span:nth-child(3),
-.partners-logo-wrapper span:nth-child(7)
-{
+.partners-logo-wrapper span:nth-child(7) {
   border-bottom: 1px solid var(--primary-color-200);
 }
 .partners-logo-wrapper span:nth-child(8),
-.partners-logo-wrapper span:nth-child(9)
-{
+.partners-logo-wrapper span:nth-child(9) {
   border-right: 1px solid var(--primary-color-200);
 }
 /* Partners Section css end */
 
 /* Contact Section css start */
-.contact-section{
+.contact-section {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-.contact-section .contact-info{
+.contact-section .contact-info {
   border-right: 1px solid var(--primary-color-200);
 }
-.contact-section .contact-info .icons-wrapper .icon-text{
+.contact-section .contact-info .icons-wrapper .icon-text {
   color: var(--color-light-100);
   font-size: var(--primary-paragraph);
   font-family: var(--secondary-font);
   font-weight: 300;
   letter-spacing: 1px;
 }
-.contact-section .contact-form form input, .contact-form-textarea  {
+.contact-section .contact-form form input,
+.contact-form-textarea {
   color: var(--color-light-100);
   background-color: rgba(0, 77, 80, 0.151);
   font-size: var(--primary-paragraph-300);
@@ -513,45 +510,46 @@
   border-radius: 0;
   padding: 10px;
 }
-.contact-section .contact-form form input:focus, .contact-form-textarea:focus  {
+.contact-section .contact-form form input:focus,
+.contact-form-textarea:focus {
   color: var(--color-light-100);
   box-shadow: none;
   background-color: rgba(0, 171, 194, 0.151);
 }
 .contact-section .map {
   width: 100%;
-  height: 400px; 
+  height: 400px;
   margin-top: 50px;
   border-radius: 10px;
-  filter:invert(10);
- }
- /* toast notification css */
-.toast-container{
+  filter: invert(10);
+}
+/* toast notification css */
+.toast-container {
   position: fixed;
   top: 7%;
   right: 0;
 }
- .notification-toast{
+.notification-toast {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
   background-color: var(--color-light-100);
   box-shadow: 0 4px 30px rgba(1, 202, 209, 0.158);
   /* color: var(--color-success);  */
- }
-.notification-text{
-   font-size: var(--primary-paragraph-200);
 }
- .notification-icon{
+.notification-text {
+  font-size: var(--primary-paragraph-200);
+}
+.notification-icon {
   font-size: var(--primary-paragraph-100);
- }
- .close-icon{
+}
+.close-icon {
   color: var(--color-dark-100);
   font-size: 20px;
 }
 
 /* Footer css start */
-.custom-footer{
+.custom-footer {
   background: rgba(255, 255, 255, 0);
   box-shadow: 0px 4px 30px rgba(1, 202, 209, 0.158);
   backdrop-filter: blur(15px);
@@ -559,18 +557,17 @@
   border-top: 1px solid rgba(0, 247, 255, 0.178);
   padding-top: 50px;
 }
-.custom-footer .footer-top{
- padding-bottom: 50px ;
+.custom-footer .footer-top {
+  padding-bottom: 50px;
 }
-.custom-footer .footer-bottom{
+.custom-footer .footer-bottom {
   padding: 30px 0;
   border-top: 1px solid rgba(0, 247, 255, 0.178);
-
 }
-.custom-footer ul li a:hover{
- color: var(--color-light-100);
+.custom-footer ul li a:hover {
+  color: var(--color-light-100);
 }
-.custom-footer .newsletter-form input{
+.custom-footer .newsletter-form input {
   color: var(--color-light-100);
   background-color: rgba(0, 77, 80, 0.151);
   font-size: var(--primary-paragraph-300);
@@ -581,7 +578,7 @@
   border-radius: 0;
   padding: 10px;
 }
-.custom-footer .newsletter-form input:focus{
+.custom-footer .newsletter-form input:focus {
   color: var(--color-light-100);
   box-shadow: none;
   background-color: rgba(0, 171, 194, 0.151);
@@ -594,29 +591,29 @@
   background: transparent;
   position: fixed;
   bottom: 16px;
-  right:32px;
-  width:50px;
-  height:50px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
   border: 1px solid var(--primary-color-200);
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:22px;
-  color:var(--primary-color-200);
+  font-size: 22px;
+  color: var(--primary-color-200);
   text-decoration: none;
-  opacity:0;
+  opacity: 0;
   pointer-events: none;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-.scroll-to-top:hover{
+.scroll-to-top:hover {
   background: var(--primary-color-200);
   color: var(--color-dark-200);
 }
 
 .scroll-to-top.active {
-  bottom:32px;
+  bottom: 32px;
   pointer-events: auto;
-  opacity:1;
+  opacity: 1;
 }
 /* Scroll to top css end */

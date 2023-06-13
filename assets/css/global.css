@@ -1,7 +1,7 @@
 /* ************************************************************
 :: Template Name: CyberX - Cyber Security Landing Page Template
-:: Template URI: 
-:: Template Author Name: Omar bin Asad
+:: Template URI: https://cyberx-web.netlify.app/
+:: Template Author Name: Omar bin Asad 
 :: Template Author URI: https://omarbinasad.netlify.app/
 :: Version: 1.0.0
 :: Created: 2023
@@ -39,8 +39,14 @@ p {
   margin: 0;
   padding: 0;
 }
-html{
-  scroll-behavior:smooth;
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
   overflow: hidden;
 }
 
