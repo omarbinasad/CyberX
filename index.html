@@ -106,22 +106,22 @@
   <section id="home" class="container hero-section d-flex flex-column align-items-center">
     <div class="row align-items-center">
       <div class="col-lg-7">
-        <h1 data-aos="fade-right" data-aos-once="true" data-aos-delay="2500" data-aos-duration="1000"
+        <h1 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="2500"
           class="heading-text">We Protect Your
           Data from Hackers</h1>
-        <p data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="2700"
+        <p data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="2750"
           class="paragraph-text py-4">
           CyberX is an agency that provides the best Cyber-Security Services
           in the city.
         </p>
-        <div data-aos="fade-right" data-aos-once="true" data-aos-delay="2750" data-aos-duration="1000"
+        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="2750"
           class="d-flex gap-3 py-3">
           <button class="button-primary-lg">See
             Details</button>
           <button class="button-secondary-lg">Contact Us</button>
         </div>
         <!-- scroll down animation -->
-        <div data-aos="fade-in" data-aos-once="true" data-aos-delay="3000" data-aos-duration="1000">
+        <div data-aos="fade-in" data-aos-once="true" data-aos-duration="1000" data-aos-delay="3000">
           <a href="#about" class="scroller text-decoration-none d-none d-sm-block">
             <p class="pb-3">SCROLL DOWN</p>
           </a>
@@ -129,7 +129,7 @@
             <i class="fa-solid fa-angles-down fa-bounce scroll-arrow d-none d-sm-inline-block"></i></a>
         </div>
       </div>
-      <div data-aos="fade-right" data-aos-once="true" data-aos-delay="3000" data-aos-duration="1000"
+      <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="3000"
         class="col-lg-5 ps-lg-5">
         <lottie-player src="/assets/lottie-json-files/code-scan.json" background="transparent" speed="1"
           style="width: auto; height: auto" loop autoplay></lottie-player>
@@ -681,7 +681,7 @@
               placeholder="Message"></textarea>
           </div>
           <div class="col-12 text-end">
-            <button type="submit" id="liveToastBtn" class="button-primary-sm">Send
+            <button type="submit" class="button-primary-sm">Send
               <i class="fa-solid fa-paper-plane ms-2"></i>
             </button>
           </div>
@@ -689,12 +689,12 @@
       </div>
     </div>
     <!-- toast -->
-    <div class="toast-container position-fixed top-0 end-0 p-3">
-      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-container p-3">
+      <div id="notification-toast" class="toast notification-toast" data-bs-delay="5000">
         <div class="toast-body d-flex align-items-center justify-content-between gap-3">
-          <i class="fa-solid fa-square-check"></i>
-          <p class="paragraph-text text-black notification-text">Successfully submitted</p>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          <i class="fa-solid notification-icon"></i>
+          <p class="notification-text"></p>
+          <i type="button" class="fa-solid fa-xmark close-icon" data-bs-dismiss="toast" aria-label="Close"></i>
         </div>
       </div>
     </div>
@@ -728,7 +728,6 @@
               <a href=""><i class="fa-solid fa-location-dot"></i></a>
               <span class="paragraph-text-sm">Road No, City Name/Code, Country Name.</span>
             </span>
-
           </div>
         </div>
         <div data-aos="fade-in" data-aos-once="true" data-aos-delay="200" data-aos-duration="1000" class="col-md-3">

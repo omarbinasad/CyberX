@@ -11,9 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // loader.style.display = 'none';
       loaderInner.style.width = '0%';
       html.style.overflow="auto";
-    },500)
+    },2000)
   };
-
 
   // Pricing table toggle funtion
     let checkBox = document.getElementById("checkbox");
@@ -58,20 +57,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const phone = document.getElementById("inputPhoneNumber")
   const subject = document.getElementById("inputSubject")
   const message = document.getElementById("inputMessage")
-  const toastTrigger = document.getElementById('liveToastBtn')
-  const toastLiveExample = document.getElementById('liveToast')
-  const toast = new bootstrap.Toast(toastLiveExample)
+  const notificationToast = document.getElementById('notification-toast')
+  const notificationText = document.querySelector(".notification-text")
+  const notificationIcon = document.querySelector(".notification-icon")
+  const toast = new bootstrap.Toast(notificationToast)
+   
   contactForm.addEventListener("submit" , (e)=>{
     e.preventDefault();
+    toast.show();
     if (firstName.value == "" || email.value == "" || phone.value == "" || message.value == "") {
-      
-   toast.show();
+    notificationToast.style.color = "var(--color-error)";
+    notificationText.innerText = "Field can't be empty";
+    notificationIcon.classList.add("fa-triangle-exclamation");
+    notificationIcon.classList.remove("fa-square-check");
+    // notificationToast.classList.add("error");
+    // notificationToast.classList.remove("success");
   } else {
-    // success toast notification
-      toast.show()
-    // alert("This form has been successfully submitted!");
+    notificationToast.style.color = "var(--color-success)";
+    notificationText.innerText = "Successfully submitted";
+    notificationIcon.classList.add("fa-square-check");
+    notificationIcon.classList.remove("fa-triangle-exclamation");
+    notificationToast.classList.add("success");
+    // notificationToast.classList.remove("error");
     console.log(
-      `First Name : ${firstName.value} Phone Number : ${phone.value}`
+      `First Name : ${firstName.value}, Last Name : ${lastName.value}, Phone Number : ${phone.value}, Subject : ${subject.value}, Message : ${message.value}
+       `
     );
   }
 });
