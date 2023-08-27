@@ -2,41 +2,45 @@
 
 @media screen and (max-width: 992px) {
   /* partners section */
-  .partners-logo-wrapper span{
-  border: 1px solid var(--primary-color-200);
+  .partners-logo-wrapper span {
+    border: 1px solid var(--primary-color-200);
   }
   /* contact section */
-  .contact-section .contact-info{
-  border-right: 0;
-  border-bottom: 1px solid var(--primary-color-200);
-}
+  .contact-section .contact-info {
+    border-right: 0;
+    border-bottom: 1px solid var(--primary-color-200);
+  }
 }
 
 /****** Medium screen media queries ******/
 
 @media screen and (max-width: 768px) {
   /* hero section */
- .hero-section, 
- .featured-section,
- .about-section,
- .services-section,
- .pricing-section,
- .reviews-section,
- .team-section,
- .partners-section,
- .contact-section{
-  padding-top: 60px;
-  padding-bottom: 60px;
- }
+  .hero-section,
+  .featured-section,
+  .about-section,
+  .services-section,
+  .pricing-section,
+  .reviews-section,
+  .team-section,
+  .partners-section,
+  .contact-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .partners-logo-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
   /* Reviews section */
- .reviews-section .slide p {
+  .reviews-section .slide p {
     padding: 0 20px;
   }
- .reviews-section .nav-btn {
+  .reviews-section .nav-btn {
     display: none;
   }
   /* preloader */
-  .preloader-inner p{
+  .preloader-inner p {
     letter-spacing: 30px;
     margin-left: 30px;
   }
@@ -46,39 +50,39 @@
 
 @media screen and (max-width: 576px) {
   /* default fonts */
-  .heading-text{
+  .heading-text {
     font-size: var(--primary-heading-200);
   }
-  .title-text{
+  .title-text {
     font-size: var(--primary-heading-300);
   }
-  .paragraph-text{
+  .paragraph-text {
     letter-spacing: 0;
   }
   /* partners section */
-  .partners-logo-wrapper span img{
-  width: 100px;
+  .partners-logo-wrapper span img {
+    width: 100px;
   }
-  .preloader{
-  width:50px;
-  height:50px;}
- 
+  .preloader {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /****** Extra small screen media queries ******/
 
 @media screen and (max-width: 400px) {
   /* default fonts */
-  .heading-text{
+  .heading-text {
     font-size: var(--primary-heading-300);
   }
   /* featured-section */
-  .featured-section .featured-card .featured-card-inner i{
+  .featured-section .featured-card .featured-card-inner i {
     font-size: 55px;
   }
-  
+
   /* partners section */
-  .partners-logo-wrapper span img{
-  width: 100px;
+  .partners-logo-wrapper span img {
+    width: 100px;
   }
 }

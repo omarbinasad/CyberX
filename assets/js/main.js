@@ -3,15 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   let loaderInner = document.querySelector(".preloader-inner");
   let loadingText = document.querySelector(".loading-text");
   let loader = document.querySelector(".preloader");
-  let html = document.querySelector("html");
-  window.onload = function () {
-    setTimeout(function () {
-      loader.style.opacity = "0";
-      loadingText.style.opacity = "0";
-      loaderInner.style.width = "0%";
-      html.style.overflow = "auto";
-    }, 1000);
-  };
+
+  setTimeout(function () {
+    loaderInner.style.animation = "fadeOut 0.5s ease-in-out forwards";
+    loadingText.style.animation = "fadeOut 0.5s ease-in-out forwards";
+    loader.style.opacity = "0";
+  }, 1500);
 
   // Pricing table toggle funtion
   let checkBox = document.getElementById("checkbox");
