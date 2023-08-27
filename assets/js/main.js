@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       loadingText.style.opacity = "0";
       loaderInner.style.width = "0%";
       html.style.overflow = "auto";
-    }, 2000);
+    }, 1000);
   };
 
   // Pricing table toggle funtion
