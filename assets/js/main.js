@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     loaderInner.style.animation = "fadeOut 0.5s ease-in-out forwards";
     loadingText.style.animation = "fadeOut 0.5s ease-in-out forwards";
+    loaderInner.style.width = "0%";
     loader.style.opacity = "0";
   }, 1500);
 
