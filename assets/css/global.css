@@ -14,6 +14,7 @@
 :root {
   --primary-color-100: #43cad4;
   --primary-color-200: #006d7c;
+  --scrollbar-border-color: #006d7c52;
   --color-light-100: #ffffff;
   --color-light-200: #c9c9c9;
   --color-dark-100: #707070;
@@ -58,12 +59,13 @@ html {
 /* Scrollbar Track */
 ::-webkit-scrollbar-track {
   background: var(--color-dark-200);
-  border: 1px solid var(--primary-color-200);
+  border: 1px solid var(--scrollbar-border-color);
 }
 
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color-200);
+  border-radius: 4px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
